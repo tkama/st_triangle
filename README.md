@@ -13,3 +13,6 @@ UNION
 SELECT ST_AsText( st_triangle( 139.76719 , 35.6811 ,200) )  
 
 ```
+
+![demo.png](https://github.com/tkama/st_triangle/blob/master/demo.png)
+
