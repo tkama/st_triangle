@@ -17,6 +17,12 @@ psql -d DATABASE_NAME -U USER_NAME  -f create_function_st_triangle.sql
 
 This UDF supports three data types.
 
+### lon lat
+  Please input WGS84(SRID=4326) point.
+
+### Radius
+  The unit of the radius is metric.
+
 ```sql
 SELECT 
  -- [type1] lon , lat , radius
