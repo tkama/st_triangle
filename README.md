@@ -16,12 +16,7 @@ psql -d DATABASE_NAME -U USER_NAME  -f create_function_st_triangle.sql
 # How to use
 
 This UDF supports three data types.
-
-### lon lat
-  Please input WGS84(SRID=4326) point.
-
-### Radius
-  The unit of the radius is metric.
+(lon/lat , geometry point , geography point)
 
 ```sql
 SELECT 
@@ -32,6 +27,14 @@ SELECT
  -- [type3] geography point , raduius 
  st_triangle( ST_POINT(139.76719 , 35.6811)::geography ,50) AS type3
  ```
+ 
+### lon lat
+  Please input WGS84(SRID=4326) point.
+  
+### Radius
+  The unit of the radius is metric.
+
+
 
 # Demo 
 Let's draw 4 triangles around Tokyo station.
